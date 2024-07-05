@@ -28,4 +28,8 @@ public class UserService {
     public void deleteById(Integer id) {
         userRepository.deleteById(id);
     }
+
+    public Optional<User> findByName(String name) {
+        return userRepository.findByName(name);
+    }
 }
